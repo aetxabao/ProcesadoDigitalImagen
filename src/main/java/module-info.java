@@ -1,4 +1,4 @@
-module edu.masanz.da.prog.pdi.procesadodigitalimagen {
+module edu.masanz.da.prog.pdi {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.swing;
