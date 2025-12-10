@@ -12,7 +12,7 @@ public class AppPdi extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(AppPdi.class.getResource("pdi-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 480, 180);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 225);
         stage.setTitle("PDI");
         stage.setScene(scene);
         stage.show();

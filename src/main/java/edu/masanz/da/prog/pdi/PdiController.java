@@ -54,10 +54,59 @@ public class PdiController {
         }
     }
 
+
     @FXML
-    void transform(ActionEvent event) {
+    void convertToGrayScale(ActionEvent event) {
         if (originalImage != null) {
-            transformedImage = Pdi.convertir(originalImage);
+            transformedImage = Pdi.convertToGrayScale(originalImage);
+            transformedView.setImage(transformedImage);
+        }
+    }
+
+    @FXML
+    void convertToRed(ActionEvent event) {
+        if (originalImage != null) {
+            transformedImage = Pdi.convertToRed(originalImage);
+            transformedView.setImage(transformedImage);
+        }
+    }
+
+    @FXML
+    void convertToEdges(ActionEvent event) {
+        if (originalImage != null) {
+            transformedImage = Pdi.convertToEdges(originalImage);
+            transformedView.setImage(transformedImage);
+        }
+    }
+
+   @FXML
+    void convertToBlur(ActionEvent event) {
+        if (originalImage != null) {
+            transformedImage = Pdi.convertToBlur(originalImage);
+            transformedView.setImage(transformedImage);
+        }
+    }
+
+    @FXML
+    void convertToBW(ActionEvent event) {
+        if (originalImage != null) {
+            transformedImage = Pdi.convertToBW(originalImage);
+            transformedView.setImage(transformedImage);
+        }
+    }
+
+    @FXML
+    void blurAndEdges(ActionEvent event) {
+        if (originalImage != null) {
+            transformedImage = Pdi.blurAndEdges(originalImage);
+            transformedView.setImage(transformedImage);
+        }
+    }
+
+    @FXML
+    void rotate(ActionEvent event) {
+        if (originalImage != null) {
+            transformedImage = Pdi.rotate(originalImage);
             transformedView.setImage(transformedImage);
         }
     }
